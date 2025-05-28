@@ -28,4 +28,21 @@ int main()
     }
 
 
+    // Clear background
+    al_clear_to_color(al_map_rgb(0, 0, 0));
+
+    al_draw_bitmap(sprite, 288, 208, 0);
+
+    al_flip_display();
+    al_rest(5.0); // show for 5 seconds
+
+    // Cleanup
+    al_destroy_display(display);
+    al_destroy_bitmap(sprite);
+    return 0;
 }
+
+
+
+
+
